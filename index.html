@@ -13,7 +13,7 @@
 				<div class="form-item">
 					<label class="form-label">姓名：</label>
 					<input type="text" class="form-input" id="name" placeholder="请输入姓名">
-					<span class="erroe-tip" id="nameTip">姓名不能为空</span>
+					<span class="error-tip" id="nameTip">姓名不能为空</span>
 				</div>
 				<div class="form-item">
 					<label class="form-label">性别：</label>
@@ -22,7 +22,7 @@
 							<input type="radio" name="gender" value="男" checked>男
 						</label>
 						<label class="radio-item">
-							<input type="radio" name="gender" value="女" checked>女
+							<input type="radio" name="gender" value="女" >女
 						</label>
 					</div>
 				</div>
@@ -63,11 +63,11 @@
 			const emailInput=document.getElementById('email');
 			const introInput=document.getElementById('intro');
 			const hometownSelect=document.getElementById('hometown');
-			const nameTip=document.geElementById('nameTip');
+			const nameTip=document.getElementById('nameTip');
 			const emailTip=document.getElementById('emailTip');
 			const summary=document.getElementById('summary');
 			
-			saveBtn.addEventListener('click',function({
+			saveBtn.addEventListener('click',function(){
 				nameTip.style.display='none';
 				emailTip.style.display='none';
 				let isPass=true;
@@ -94,7 +94,7 @@
 					summary.style.display="block";
 				}
 				
-			}))
+			})
 		</script>
 	</body>
 </html>
